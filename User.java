@@ -12,11 +12,19 @@ import java.io.Serializable;
 public class User implements Serializable {
     private String userName;
     private String pwd;
+	private String sex;
     public User(){}
     public User(String userName,String pwd){
         this.userName = userName;
         this.pwd = pwd;
+		this.sex = sex;
     }
+	public String getSex(){
+		return sex;
+	}
+	public void setSex(){String sex}{
+		this.sex = sex;
+	}
 
     public String getUserName() {
         return userName;
